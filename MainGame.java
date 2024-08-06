@@ -46,10 +46,11 @@ public class MainGame {
             System.out.println("\n");
             break;
         default:
-            System.out.println("Exiting The Program!");
-            TimeUnit.SECONDS.sleep(5);
+            System.out.println("No Such Game Mode Exist.");
+            break;
     }
 }while (gameMode.gameId<4 && gameMode.gameId>0);
-
+        System.out.println("Exiting The Program!");
+        TimeUnit.SECONDS.sleep(5);
     }
 }
