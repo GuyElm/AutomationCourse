@@ -7,11 +7,18 @@ public class MainGame {
     public static void main(String[] args) throws InterruptedException {
         Scanner input = new Scanner(System.in);
         Game gameMode = new Game();
-        gameMode.gameId=0;
+        String mode;
         do {
         System.out.print("Please choose your game mode:\n1 = Currency converter\n2 = First Letter separator\n3 = Guess The Number Game\nAny Other Number = Exit: ");
 
-        gameMode.gameId = Integer.parseInt(input.nextLine());
+        mode =input.nextLine();
+
+        if(mode.isEmpty()){
+            gameMode.gameId=0;
+        }
+        else{
+            gameMode.gameId = Integer.parseInt(mode);
+        }
 
     switch (gameMode.gameId) {
         case 1:
