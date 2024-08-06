@@ -8,7 +8,7 @@ public class MainGame {
         Scanner input = new Scanner(System.in);
         Game gameMode = new Game();
         do {
-        System.out.print("Please choose your game mode:\n1 = Currency converter\n2 = First Letter separator\n3 = Guess The Number Game\nAny Other Number = Exit): ");
+        System.out.print("Please choose your game mode:\n1 = Currency converter\n2 = First Letter separator\n3 = Guess The Number Game\nAny Other Number = Exit: ");
 
         gameMode.gameId = Integer.parseInt(input.nextLine());
 
