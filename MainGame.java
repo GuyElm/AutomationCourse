@@ -49,7 +49,7 @@ public class MainGame {
             System.out.println("Exiting The Program!");
             TimeUnit.SECONDS.sleep(5);
     }
-}while (gameMode.gameId<4);
+}while (gameMode.gameId<4 && gameMode.gameId>0);
 
     }
 }
