@@ -8,7 +8,7 @@ public class MainGame {
         Scanner input = new Scanner(System.in);
         Game gameMode = new Game();
         do {
-        System.out.print("Please choose your game mode (1 = Currency converter, 2 = First Letter separator, 3 = Guess The Number Game, Any Other Number = Exit): ");
+        System.out.print("Please choose your game mode:\n1 = Currency converter\n2 = First Letter separator\n3 = Guess The Number Game\nAny Other Number = Exit): ");
 
         gameMode.gameId = Integer.parseInt(input.nextLine());
 
@@ -28,6 +28,7 @@ public class MainGame {
             } else {
                 gameMode.currencyConvertor(Double.parseDouble(amount), currency);
             }
+            System.out.println("\n");
             break;
         case 2:
             System.out.print("Please Enter Your Name: ");
@@ -37,9 +38,11 @@ public class MainGame {
             } else {
                 gameMode.upperFirst(name);
             }
+            System.out.println("\n");
             break;
         case 3:
             gameMode.guessTheNumber();
+            System.out.println("\n");
             break;
         default:
             System.out.println("Exiting The Program!");
