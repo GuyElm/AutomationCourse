@@ -41,7 +41,7 @@ public class DragNDropHW {
     public void DragNDrop(){
           //Draggable (First File)
         WebElement target = driver.findElement(By.xpath("//div[@class='trash']"));                  //Droppable (Trash)
-        for (int i=0 ; i<4 ;i++) {
+        for (int i = 0 ; i < 4 ; i++) {
             WebElement source = driver.findElement(By.xpath("(//img[@class='document'])[1]"));      //Draggable Docs (I Want All Of Them To Be In The Trash - Gets The First Place In The List Every Time)
             action.dragAndDrop(source, target).build().perform();
         }
