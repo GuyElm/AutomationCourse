@@ -1,0 +1,1 @@
+{"uuid":"0a5bc4a6-1700-49c6-8a4b-2d05beacbf70","name":"APILesson01.OpenWeatherMapEx","children":["adc33194-43a4-4350-b269-558e0d1527d9"],"befores":[{"name":"startSession","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1732180266082,"stop":1732180267324}],"afters":[],"start":1732180265998,"stop":1732180269800}
